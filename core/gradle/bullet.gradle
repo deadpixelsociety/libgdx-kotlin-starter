@@ -1,0 +1,5 @@
+apply from: rootProject.file('versions.gradle')
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-bullet:${v.gdx}"
+}

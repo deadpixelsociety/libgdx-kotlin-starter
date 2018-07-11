@@ -3,7 +3,7 @@ apply plugin: "kotlin"
 sourceCompatibility = 1.6
 sourceSets.main.java.srcDirs = [ "src/" ]
 
-project.ext.mainClassName = "com.mygdx.game.desktop.DesktopLauncher"
+project.ext.mainClassName = "${package_name}.desktop.DesktopLauncherKt"
 project.ext.assetsDir = new File("../android/assets");
 
 task run(dependsOn: classes, type: JavaExec) {
@@ -38,7 +38,7 @@ dist.dependsOn classes
 
 eclipse {
     project {
-        name = appName + "-desktop"
+        name = app_name + "-desktop"
         linkedResource name: 'assets', type: '2', location: 'PARENT-1-PROJECT_LOC/android/assets'
     }
 }

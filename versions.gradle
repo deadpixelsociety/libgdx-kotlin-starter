@@ -1,0 +1,6 @@
+ext.v = [
+        ai         : '1.8.0',
+        ashley     : '1.7.0',
+        box2dlights: '1.4',
+        gdx        : '1.9.8'
+]

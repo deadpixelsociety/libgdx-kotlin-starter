@@ -1,0 +1,10 @@
+apply from: rootProject.file('versions.gradle')
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-backend-android:${v.gdx}"
+    natives "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-armeabi"
+    natives "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-armeabi-v7a"
+    natives "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-arm64-v8a"
+    natives "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-x86"
+    natives "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-x86_64"
+}

@@ -1,0 +1,6 @@
+apply from: rootProject.file('versions.gradle')
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-controllers-desktop:${v.gdx}"
+    implementation "com.badlogicgames.gdx:gdx-controllers-platform:${v.gdx}:natives-desktop"
+}

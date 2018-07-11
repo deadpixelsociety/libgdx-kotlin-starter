@@ -57,7 +57,7 @@ moeMainDebugIphonesimulatorXcodeBuild.dependsOn copyNatives
 eclipse {
     // Set Multi-OS Engine nature
     project {
-        name = appName + "-ios-moe"
+        name = app_name + "-ios-moe"
         natures 'org.multi-os-engine.project'
     }
 }

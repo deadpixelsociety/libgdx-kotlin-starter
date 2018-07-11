@@ -1,0 +1,7 @@
+apply from: rootProject.file('versions.gradle')
+
+dependencies {
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl:${v.gdx}"
+    implementation "com.badlogicgames.gdx:gdx-platform:${v.gdx}:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-tools:${v.gdx}"
+}
